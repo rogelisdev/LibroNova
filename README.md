@@ -61,9 +61,9 @@ To launch the application, ensure you have a dedicated `App.java` class:
 
 ```java
 
-// App.java 
-public class App {
+// public class App {
     public static void main(String[] args) {
-        new PartnerApp().start(); // Launches the application flow
+        PartnerApp app = new PartnerApp();
+        app.start();
     }
 }
