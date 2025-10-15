@@ -89,7 +89,7 @@ public class PartnerDAOImpl implements ParnertDAO {
 
     @Override
     public boolean updatePartnerPhone(Partner partner) {
-        String sql = "UPDATE book SET phonenumber = ? WHERE id = ?";
+        String sql = "UPDATE partner SET phonenumber = ? WHERE id = ?";
         try(Connection conn = ConnectionDB.getConnection();
             PreparedStatement ps = conn.prepareStatement(sql);){
 
